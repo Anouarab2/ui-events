@@ -36,12 +36,12 @@ interaction.addEventListener('animationend', jumpHandler)
 
 let changeColor = document.querySelector('a:nth-of-type(1)')
 
-
 changeColor.addEventListener('click', colorChange)
 
 function colorChange() {
   changeColor.classList.toggle('colorChange')
 }
+
 
 let scaleLink = document.querySelector('a:nth-of-type(2)')
 
@@ -50,3 +50,13 @@ scaleLink.addEventListener('mouseover', linkScale)
 function linkScale(){
 scaleLink.classList.toggle('linkScale')
 }
+
+
+let bibber = document.querySelector('a:nth-of-type(3)')
+
+bibber.addEventListener('click', bibberLink)
+
+function bibberLink(){
+  bibber.classList.toggle('bibber')
+}
+
