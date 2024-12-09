@@ -42,3 +42,11 @@ changeColor.addEventListener('click', colorChange)
 function colorChange() {
   changeColor.classList.toggle('colorChange')
 }
+
+let scaleLink = document.querySelector('a:nth-of-type(2)')
+
+scaleLink.addEventListener('mouseover', linkScale)
+
+function linkScale(){
+scaleLink.classList.toggle('linkScale')
+}

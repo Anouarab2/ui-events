@@ -85,3 +85,8 @@ a:nth-of-type(12) {
 .colorChange{
   background-color: red;
 }
+
+.linkScale{
+  scale: 1.5;
+  transition-duration: 1s;
+}
