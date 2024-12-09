@@ -33,3 +33,12 @@ interaction.addEventListener('animationend', jumpHandler)
 
 // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
 // bibberLink.classList.toggle...
+
+let changeColor = document.querySelector('a:nth-of-type(1)')
+
+
+changeColor.addEventListener('click', colorChange)
+
+function colorChange() {
+  changeColor.classList.toggle('colorChange')
+}

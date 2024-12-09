@@ -81,3 +81,7 @@ a:nth-of-type(12) {
 
 
 /* Hieronder komen jouw animaties */
+
+.colorChange{
+  background-color: red;
+}
