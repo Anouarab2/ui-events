@@ -109,13 +109,15 @@ function removeLink(){
 }
 
 
+// selecteer het element 
+let color = document.querySelector('a:nth-of-type(7)')
 
-// let color = document.querySelector('a:nth-of-type(7)')
+//voeg een event toe
+color.addEventListener('wheel', colorLink)
 
-// color.addEventListener('wheel', colorLink)
-
-// function colorLink(){
-//   color.classList.toggle('color')
-// }
+//benoem de functie
+function colorLink(){
+  color.classList.toggle('color')
+}
 
 
