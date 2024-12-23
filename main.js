@@ -80,6 +80,7 @@ function rotateLink(){
 rotate.addEventListener('animationend', rotateLink)
 
 
+
 // selecteer het element 
 let move = document.querySelector('a:nth-of-type(5)')
 
@@ -96,13 +97,17 @@ move.addEventListener('animationend', moveLink)
 
 
 
-// let remove = document.querySelector('a:nth-of-type(6)')
+//selecteer het element
+let remove = document.querySelector('a:nth-of-type(6)')
 
-// remove.addEventListener('dblclick', removeLink)
+//voeg een event toe
+remove.addEventListener('dblclick', removeLink)
 
-// function removeLink(){
-//   remove.classList.toggle('hide')
-// }
+//benoem de functie
+function removeLink(){
+  remove.classList.toggle('hide')
+}
+
 
 
 // let color = document.querySelector('a:nth-of-type(7)')
