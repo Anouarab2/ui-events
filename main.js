@@ -52,6 +52,7 @@ scaleLink.classList.toggle('linkScale')
 }
 
 
+
 let bibber = document.querySelector('a:nth-of-type(3)')
 
 bibber.addEventListener('click', bibberLink)
@@ -59,4 +60,54 @@ bibber.addEventListener('click', bibberLink)
 function bibberLink(){
   bibber.classList.toggle('bibber')
 }
+
+bibber.addEventListener('animationend', bibberLink)
+
+
+
+//selecteer het element
+let rotate = document.querySelector('a:nth-of-type(4)')
+
+// voeg een event toe
+rotate.addEventListener('click', rotateLink)
+
+// benoem de functie
+function rotateLink(){
+  rotate.classList.toggle('rotate')
+}
+
+//haal de class weg na de animatie
+rotate.addEventListener('animationend', rotateLink)
+
+
+
+// let move = document.querySelector('a:nth-of-type(5)')
+
+// move.addEventListener('mouseover', moveLink)
+
+// function moveLink(){
+//   move.classList.toggle('move')
+// }
+
+// move.addEventListener('animationend', moveLink)
+
+
+
+// let remove = document.querySelector('a:nth-of-type(6)')
+
+// remove.addEventListener('dblclick', removeLink)
+
+// function removeLink(){
+//   remove.classList.toggle('hide')
+// }
+
+
+// let color = document.querySelector('a:nth-of-type(7)')
+
+// color.addEventListener('wheel', colorLink)
+
+// function colorLink(){
+//   color.classList.toggle('color')
+// }
+
 
