@@ -80,16 +80,19 @@ function rotateLink(){
 rotate.addEventListener('animationend', rotateLink)
 
 
+// selecteer het element 
+let move = document.querySelector('a:nth-of-type(5)')
 
-// let move = document.querySelector('a:nth-of-type(5)')
+// voeg een event toe 
+move.addEventListener('mouseover', moveLink)
 
-// move.addEventListener('mouseover', moveLink)
+// benoem de functie 
+function moveLink(){
+  move.classList.toggle('move')
+}
 
-// function moveLink(){
-//   move.classList.toggle('move')
-// }
-
-// move.addEventListener('animationend', moveLink)
+// haal de class weg na de animatie 
+move.addEventListener('animationend', moveLink)
 
 
 
